@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/w3.css">
+    <title>Pertemuan 13</title>
+</head>
+<body>
+    <div class="w3-container">
+        <img src="assets/img/banner.jpg" alt="Banner" style="height: 350px; width: 100%;">
+        <!-- <h2>Membuat Menu Tab dan Link</h2> -->
+    </div>
+    <div class="w3-bar w3-blue w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="namaMenu('Home')">Home</button>
+        <button class="w3-bar-item w3-button" onclick="namaMenu('Rolls-Royce-Phanthom')">Rolls Royce Phanthom</button>
+        <button class="w3-bar-item w3-button" onclick="namaMenu('Bugatti')">Bugatti</button>
+        <button class="w3-bar-item w3-button" onclick="namaMenu('Pagani')">Pagani</button>
+        <button class="w3-bar-item w3-button" onclick="namaMenu('Genesis')">Genesis</button>
+        <button class="w3-bar-item w3-button" onclick="namaMenu('Lexus')">Lexus</button>
+        <button class="w3-bar-item w3-button" onclick="namaMenu('Profile')">Profile</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Dropdown</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="namaMenu('Home')">Home</button>
+                <button class="w3-bar-item w3-button" onclick="namaMenu('Profile')">Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <center>
+    <div id="Home" class="w3-container menu w3-animate-top" style="display:none;" >
+        <img src="assets/img/baesuzy.jpg" alt="">
+        <h2>Home</h2>
+        <p>Menampilkan Animasi Top</p>
+    </div>
+    <div id="Rolls-Royce-Phanthom" class="w3-container menu w3-animate-bottom" style="display:none;" >
+        <img src="assets/img/Rolls-Royce-Phantom.jpg" alt="">
+        <h2>Rolls-Royce-Phanthom</h2>
+        <p>Rolls-Royce, merek mobil mewah asal Inggris ini memang spesialis membuat kendaraan untuk para orang kaya. Keluarga kerajaan Inggris, juga banyak yang menggunakan Rolls-Royce.</p>
+    </div>
+    <div id="Bugatti" class="w3-container menu w3-animate-left" style="display:none;" >
+        <img src="assets/img/bugatti.jpg" alt="">
+        <h2>Bugatti</h2>
+        <p>Bugatti. Pabrikan ini sudah ada sejak 15 September 1881 di Molsheim, Alsace, Prancis (dulunya masuk wilayah Jerman).</p>
+    </div>
+    <div id="Pagani" class="w3-container menu w3-animate-right" style="display:none;" >
+        <img src="assets/img/Pagani-Zonda-Tricole.jpeg" alt="">
+        <h2>Pagani</h2>
+        <p>Pagani Zonda HP Barchetta menawarkan performa mesin buas, 7.3-liter V12 yang dikembangkan khusus oleh Mercedes-AMG. Tenaga sebesar 789 hp dan torsi puncak 850 Nm, mampu melesatkan hypercar ini hingga kecepatan maksimal 355 km/jam.</p>
+    </div>
+    <div id="Genesis" class="w3-container menu w3-animate-opacity" style="display:none;" >
+        <img src="assets/img/mobil-listrik-di-ktt-g20-genesis-g80-lwb-1.jpg" alt="">
+        <h2>Genesis</h2>
+        <p>Genesis. Jika kamu belum tahu, ini masih satu group dengan Hyundai yang berasal dari Korea Selatan. Hanya saja, Genesis dibuat khusus melahirkan produk-produk kelas atas.</p>
+    </div>
+    <div id="Lexus" class="w3-container menu w3-animate-zoom" style="display:none;" >
+        <img src="assets/img/lexus.jpg" alt="">
+        <h2>Lexus</h2>
+        <p>Merek Mobil mewah asal Jepang, Lexus merupakan saudara dari Toyota. Kurang lebih hubungannya seperti Hyundai dan Genesis, di mana Lexus menjual mobil versi lebih mewah dibanding Toyota.</p>
+    </div>
+    <div id="Profile" class="w3-container menu w3-animate-zoom" style="display:none;" >
+        <img src="assets/img/foto-ir.png" alt="">
+        <h2>Profile</h2>
+        <table>
+            <tr>
+                <td>Nama : </td>
+                <td>Irfan Putra Hendari</td>
+            </tr>
+            <tr>
+                <td>Nim  :</td>
+                <td>10123021</td>
+            </tr>
+            <tr>
+                <td>Kelas  :</td>
+                <td>IF-1</td>
+            </tr>
+        </table>
+        <p>Merek Mobil mewah asal Jepang, Lexus merupakan saudara dari Toyota. Kurang lebih hubungannya seperti Hyundai dan Genesis, di mana Lexus menjual mobil versi lebih mewah dibanding Toyota.</p>
+    </div>
+    <script>
+    function namaMenu(Menu) {
+        var i;
+        var x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(Menu).style.display = "block";
+    }
+    </script>
+</body>
+</html>
